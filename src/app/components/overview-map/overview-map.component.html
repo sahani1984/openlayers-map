@@ -1,0 +1,11 @@
+<div class="customTabs">
+<ul class="nav nav-tabs tab">
+  <li class="nav-item">
+    <a [class.active]="activeMapType==='overviewMap'" (click)="setActiveMap('overviewMap')" href="javascript:void(0)" class="nav-link">Overview Map</a>
+  </li>
+  <li class="nav-item">
+    <a [class.active]="activeMapType==='customOverviewMap'"  (click)="setActiveMap('customOverviewMap')" href="javascript:void(0)" class="nav-link">Custom Overview Map</a>
+  </li>
+</ul>
+</div>
+<div id="overviewMap" class="mapwrapper map"></div>

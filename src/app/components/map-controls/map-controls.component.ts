@@ -29,25 +29,25 @@ map:any;
       })
     })
     const mousePos = new MousePosition({
-      coordinateFormat: createStringXY(2),
-      projection:"EPSG:4326",
-      className:'custom_mouse_position' 
+       coordinateFormat: createStringXY(2),
+       projection:"EPSG:4326", className:'custom_mouse_position' 
     })
     const scaleLine = new ScaleLine({bar:true,text:true})
     const fullscreen = new FullScreen();
-    const zoomslider = new ZoomSlider()
+    const zoomslider = new ZoomSlider();
+    const rotate = new Rotate()
    
 
     // mousePos.setProjection('EPSG:4326');
     
       this.map = new Map({
-        controls:defaultControls().extend([mousePos, scaleLine, fullscreen, zoomslider]),
+        controls: defaultControls().extend([mousePos, scaleLine, fullscreen, rotate, zoomslider]),
         interactions:defaultInteractions().extend([new DragRotateAndZoom()]),
         layers:[xyzlayer],
         target:"mapControl",
         view: new View({
           center: [-33519607, 5616436],
-          zoom:4,
+          zoom:8,
           rotation: -Math.PI / 8
         })       
       })
