@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
+import {HttpClientModule} from '@angular/common/http'
 
 import { AppComponent } from './app.component';
 import { SimpleMapComponent } from './components/simple-map/simple-map.component';
@@ -9,6 +10,8 @@ import { MapControlsComponent } from './components/map-controls/map-controls.com
 import { OverviewMapComponent } from './components/overview-map/overview-map.component';
 import { MapIconsComponent } from './components/map-icons/map-icons.component';
 import { ClusterMapComponent } from './components/cluster-map/cluster-map.component';
+import { MapMarkerComponent } from './components/map-marker/map-marker.component';
+import { ClusterSampleOneComponent } from './components/cluster-sample-one/cluster-sample-one.component';
 
 const routes: Routes = [
   {path:"", redirectTo:"/simple-map", pathMatch:"full"},
@@ -17,7 +20,9 @@ const routes: Routes = [
   {path:"overview-map", component:OverviewMapComponent},
   {path:"map-icons", component:MapIconsComponent},
   {path:"wms-layer", component:SimpleMapComponent},
-  {path:"cluster-map", component:ClusterMapComponent }
+  {path:"cluster-map", component:ClusterMapComponent },
+  {path:"map-marker", component:MapMarkerComponent },
+  {path:"cluster-sample-one", component:ClusterSampleOneComponent }
 ];
 
 @NgModule({
@@ -28,10 +33,13 @@ const routes: Routes = [
     MapControlsComponent,
     OverviewMapComponent,
     MapIconsComponent,
-    ClusterMapComponent
+    ClusterMapComponent,
+    MapMarkerComponent,
+    ClusterSampleOneComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot(routes),
     
   ],
