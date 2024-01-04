@@ -37,12 +37,11 @@
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "./node_modules/ol/ol.css",
               "./node_modules/ol-ext/dist/ol-ext.css",
+              "./node_modules/ol-layerswitcher/dist/ol-layerswitcher.css",
               "src/styles.scss"
             ],
             "scripts": [
-              "./node_modules/jquery/dist/jquery.min.js",
-              "./node_modules/ol-ext/dist/ol-ext.js",
-              "./node_modules/ol-supercluster/dist/ol-supercluster.js"
+              "./node_modules/jquery/dist/jquery.min.js"
             ]
           },
           "configurations": {

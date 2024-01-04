@@ -1,0 +1,8 @@
+.grid-container{width:100%; display:flex; height:100vh;
+.grid-1{width:200px; height:100vh; background-color:#fff; padding:50px 15px;}
+.grid-1 ul{list-style:none; margin:0; padding:0;}
+.grid-1 li label{padding-left:5px;}
+.grid-2{width:calc(100% - 200px); position:relative; height:100vh;
+.mapwrapper{position:absolute; z-index:999;}
+}
+}

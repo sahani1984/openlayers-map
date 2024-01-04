@@ -12,6 +12,7 @@ import { MapIconsComponent } from './components/map-icons/map-icons.component';
 import { ClusterMapComponent } from './components/cluster-map/cluster-map.component';
 import { MapMarkerComponent } from './components/map-marker/map-marker.component';
 import { ClusterSampleOneComponent } from './components/cluster-sample-one/cluster-sample-one.component';
+import { LayerSwitcherComponent } from './components/layer-switcher/layer-switcher.component';
 
 const routes: Routes = [
   {path:"", redirectTo:"/simple-map", pathMatch:"full"},
@@ -22,7 +23,8 @@ const routes: Routes = [
   {path:"wms-layer", component:SimpleMapComponent},
   {path:"cluster-map", component:ClusterMapComponent },
   {path:"map-marker", component:MapMarkerComponent },
-  {path:"cluster-sample-one", component:ClusterSampleOneComponent }
+  {path:"cluster-sample-one", component:ClusterSampleOneComponent },
+  {path:"layer-switcher", component:LayerSwitcherComponent }
 ];
 
 @NgModule({
@@ -35,7 +37,8 @@ const routes: Routes = [
     MapIconsComponent,
     ClusterMapComponent,
     MapMarkerComponent,
-    ClusterSampleOneComponent
+    ClusterSampleOneComponent,
+    LayerSwitcherComponent
   ],
   imports: [
     BrowserModule,
